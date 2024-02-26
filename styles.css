@@ -11,6 +11,25 @@ center {
     width: 400px;
     height: fit-content;
 }
+
+label{
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    color: rgb(82, 82, 82);
+    transition: .3s ease-in-out;
+    -webkit-text-security: none;
+}
+
+input:focus + label{
+    top: -23px;
+    font-size: .885em;
+    pointer-events: none;
+    color: white;
+    -webkit-text-security: none;
+    -webkit-text-stroke: none;
+}
+
 input{
     margin: 0;
     border: 0;
@@ -22,8 +41,8 @@ input{
     height: 24px;
     border-radius: 15px;
     padding: 8px;
+    outline: none;
 }
-
 button {
     margin: 0;
     border: 0;
@@ -36,10 +55,17 @@ button {
     border-radius: 15px;
     padding: 8px;
     color: white;
-    cursor: pointer;  
+    cursor: pointer;
+    transition: .3s ease-in-out;    
 }
-button:active{
+
+button:hover {
     background-color: rgba(158, 93, 115, 0.856);
+    }
+
+button:active{
+    background-color: rgb(157, 81, 106);
+
 }
 
 span {
@@ -62,12 +88,14 @@ sg {
     font-family: sans-serif;
     font-style: inherit;
     color: rgb(226, 225, 225);
+    position: relative;
+    top: -17px
 }
 
 box{
     margin: 0;
     position: absolute;
-    top: 130%;
+    top: 120%;
     left: -25%;
     background-color: grey;
     width: 325px;
@@ -95,6 +123,14 @@ st2{
     color: rgba(216, 112, 147, 0.856);
     font-size: 13.5px;
     font-style: mark;
+}
+
+st2:hover {
+    color: rgba(184, 95, 125, 0.856);
+    }
+
+st2:active{
+    color: rgba(148, 77, 100, 0.856);
 }
 
 box3{
@@ -129,6 +165,18 @@ st3{
     color: white;
     font-size: 13.5px;
 }
+
+st3ln{
+    color: white;
+}
+
+st3ln:hover {
+    color: rgb(210, 210, 210);
+    }
+
+st3ln:active{
+    color: rgba(165, 165, 165, 0.856);
+}
 st4{
     text-align: center; 
     position: absolute; 
@@ -140,8 +188,13 @@ st4{
 
 vacht {
     position:relative;
-    bottom:100px;
+    bottom: 90px;
  }
 h1{
     font-family: cursive;
+}
+
+imgpos{
+    position: relative; 
+    top: -8.5px;
 }
