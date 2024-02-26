@@ -123,6 +123,7 @@ st2{
     color: rgba(216, 112, 147, 0.856);
     font-size: 13.5px;
     font-style: mark;
+    transition: .3s ease-in-out;
 }
 
 st2:hover {
@@ -168,6 +169,7 @@ st3{
 
 st3ln{
     color: white;
+    transition: .3s ease-in-out;
 }
 
 st3ln:hover {
@@ -196,5 +198,5 @@ h1{
 
 imgpos{
     position: relative; 
-    top: -8.5px;
+    top: -9px;
 }
